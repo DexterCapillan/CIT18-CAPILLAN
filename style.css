@@ -1,46 +1,46 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #000000;
-    overflow: hidden; /* Hide overflow to prevent scrollbar */
+    background-color: #0F1C2E; /* Deep blue background color */
+    color: #fff;
 }
 
 header {
-    background: url('https://tse2.mm.bing.net/th?id=OIP.75f2PVMUhk04iDSUk3wdfQHaEK&pid=Api&P=0&h=220') fixed; /* Replace 'galaxy.jpg' with your actual image */
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent),
+                linear-gradient(135deg, #00274E, #021E3A, #2A86FF, #001F3F);
+    background-size: 100% 100%, 600% 600%;
+    background-position: right, center;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     position: relative;
+    overflow: hidden;
+    animation: gradientAnimation 4s infinite, pulsate 2s infinite;
 }
 
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
-    z-index: 1;
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
 }
 
 h1 {
     margin: 0;
-    z-index: 2;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-
-}
+/* Section Styles */
 
 section {
     margin: 40px 20px;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #0F1C2E; /* Dark blue background color */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -48,11 +48,13 @@ section {
 
 section:hover {
     transform: scale(1.05);
-    background-color: #ecf0f1;
+    background-color: #0A1525; /* Darker blue on hover */
 }
 
+/* Footer Styles */
+
 footer {
-    background-color: #333;
+    background-color: #121B2D; /* Darker blue background color */
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -60,6 +62,8 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Button Styles */
 
 button {
     background-color: #3498db;
@@ -76,3 +80,33 @@ button:hover {
 }
 
 /* Add more styles based on your preferences */
+
+/* Add styles for the "About Me" section */
+#about-me {
+
+}
+
+/* Add styles for the "Education" section */
+#education {
+    /* Add your styles for the "Education" section */
+}
+
+/* Add styles for the "Experience" section */
+#experience {
+    /* Add your styles for the "Experience" section */
+}
+
+/* Add styles for the "Skills" section */
+#skills {
+    /* Add your styles for the "Skills" section */
+}
+
+/* Add styles for the "Projects" section */
+#projects {
+    /* Add your styles for the "Projects" section */
+}
+
+/* Add styles for the "Contact Information" section */
+#contact {
+    /* Add your styles for the "Contact Information" section */
+}
