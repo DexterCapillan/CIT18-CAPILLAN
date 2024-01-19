@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0F1C2E; /* Deep blue background color */
+    background-color: #0F1C2E; 
     color: #fff;
 }
 
@@ -34,12 +34,12 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Section Styles */
+
 
 section {
     margin: 40px 20px;
     padding: 20px;
-    background-color: #0F1C2E; /* Dark blue background color */
+    background-color: #0F1C2E; 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     overflow: hidden;
@@ -48,22 +48,9 @@ section {
 
 section:hover {
     transform: scale(1.05);
-    background-color: #0A1525; /* Darker blue on hover */
+    background-color: #0A1525; 
 }
 
-/* Footer Styles */
-
-footer {
-    background-color: #121B2D; /* Darker blue background color */
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Button Styles */
 
 button {
     background-color: #3498db;
@@ -79,34 +66,236 @@ button:hover {
     background-color: #2980b9;
 }
 
-/* Add more styles based on your preferences */
 
-/* Add styles for the "About Me" section */
+
+
+#about-me-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 4000;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out;
+   color: #36047d;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 #about-me {
-
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Add styles for the "Education" section */
+#about-me:hover {
+    color: #3498db;
+}
+
+#close-btn {
+    background-color: #3498db;
+    color: #36047d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#close-btn:hover {
+    background-color: #2980b9;
+}
+
+
+#education-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 4000;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out;
+   color: #36047d;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 #education {
-    /* Add your styles for the "Education" section */
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Add styles for the "Experience" section */
+#education:hover {
+    color: #3498db;
+}
+
+#close-btn {
+    background-color: #3498db;
+    color: #36047d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#close-btn:hover {
+    background-color: #2980b9;
+}
+
+
+#experience-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 4000;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out;
+   color: #36047d;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 #experience {
-    /* Add your styles for the "Experience" section */
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Add styles for the "Skills" section */
+#experience:hover {
+    color: #3498db;
+}
+
+#close-btn {
+    background-color: #3498db;
+    color: #36047d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#close-btn:hover {
+    background-color: #2980b9;
+}
+
+
+#skills-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 4000;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out;
+   color: #36047d;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 #skills {
-    /* Add your styles for the "Skills" section */
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Add styles for the "Projects" section */
+#skills:hover {
+    color: #3498db;
+}
+
+#close-btn {
+    background-color: #3498db;
+    color: #36047d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#close-btn:hover {
+    background-color: #2980b9;
+}
+
+
+
 #projects {
-    /* Add your styles for the "Projects" section */
+    
 }
 
-/* Add styles for the "Contact Information" section */
-#contact {
-    /* Add your styles for the "Contact Information" section */
+
+#contacts-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 4000;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out;
+   color: #36047d;
 }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#contacts {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+#contacts:hover {
+    color: #3498db;
+}
+
+#close-btn {
+    background-color: #3498db;
+    color: #36047d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#close-btn:hover {
+    background-color: #2980b9;
+}
+

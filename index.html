@@ -1,49 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-        <link rel="stylesheet" href="styles.css">
-        <title>Your Name - Personal Portfolio</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Dexter Capillan - Personal Portfolio</title>
+</head>
 <body>
 
     <header>
-        <h1>Dexter Capillan</h1>
-        <p>A Web Developer!</p>
-        <p>Kung Hindi Papalarin, Asawa nalang ni kwash</p>
+        <h2><i>HI! I AM</i></h2>
+        <h1><i>Dexter Capillan</i></h1>
+        <p><i>A Web Developer!</i></p>
+
     </header>
 
-    <section id="about-me">
+    <section id="about-me" onclick="showAboutMePopup()">
         <h2>About Me</h2>
-        <p>This is a brief introduction about yourself.</p>
     </section>
 
-    <section id="education">
+    
+    <div id="about-me-popup">
+        <p>I,m a BSIT student major in Web Developing, Lives in Baguio City Camp 7 Benguet, 
+            <br>My Age is secret hahahahaa, bawal mag reveal,
+            <br>My Tagline is "Anong Halik ang nalipad? edi Halikapter haahaha"</p></br>
+        </p>
+        <button id="close-btn" onclick="closeAboutMePopup()">Close</button>
+    </div>
+
+    <section id="education" onclick="showEducationPopup()">
         <h2>Education</h2>
-        <!-- Add your education details here -->
     </section>
 
-    <section id="experience">
+    <div id="education-popup">
+        <p><br><h2><i>EDUCATIONAL BACKGROUND</i></h2></p>
+            <br>TERTIARY: TALIPTIP NATIONAL HIGH SCHOOL
+            <br>CCS GRADUATE
+            <br>Best in Immersion
+            <br>Bulakan,Bulacan
+            <h3><i>2018-2020</i></h3>
+            SECONDARY: CATABLAN INTERGRATED SCHOOL
+           <br> Catablan,Urdaneta City
+            <br><h3><i>2013-2017</i></h3></p>
+        <button id="close-btn" onclick="closeEducationPopup()">Close</button>
+    </div>
+
+
+    <section id="experience"  onclick="showExperiencePopup()" >
         <h2>Experience</h2>
-        <!-- Add your work experience details here -->
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <!-- Add your skills here -->
-    </section>
+    <div id="experience-popup">
+        
+          <p><h2><i>Best in Immersion</i></h2></p>
+            
+        <button id="close-btn" onclick="closeExperiencePopup()">Close</button>
+    </div>
 
+    <section id="skills" onclick="showSkillsPopup()">
+        <h2>Skills</h2>  
+    </section>
+    <div id="skills-popup">
+        
+        <br><p><h2><i>Video Editing</i></h2></p>
+        <br><p><h2><i>Photo Editing</i></h2></p>
+        <br><p><h2><i>HTML</i></h2></p>
+        <br><p><h2><i>CSS</i></h2></p>
+        <br><p><h2><i>Javascript</i></h2></p>
+      <button id="close-btn" onclick="closeSkillsPopup()">Close</button>
+  </div>
     <section id="projects">
         <h2>Projects</h2>
-        <!-- Add your project details here -->
+        
     </section>
 
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <!-- Add your contact details or a contact form here -->
+    <section id="contacts" onclick="showContactsPopup()">
+        <h2>Contacts</h2>  
     </section>
-    <script src="script.js"></script>
+    <div id="contacts-popup">
+        
+        <br><p><h2><i>Cell Number:09959307050</i></h2></p>
+        <br><p><h2><i>scottwenchester22@gmail.com</i></h2></p>
+        
+      <button id="close-btn" onclick="closeContactsPopup()">Close</button>
+  </div>
 </body>
 </html>
